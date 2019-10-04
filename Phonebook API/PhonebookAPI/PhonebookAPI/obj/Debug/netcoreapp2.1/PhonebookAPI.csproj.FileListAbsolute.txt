@@ -1,0 +1,16 @@
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\PhonebookAPI.deps.json
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\PhonebookAPI.runtimeconfig.json
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\PhonebookAPI.runtimeconfig.dev.json
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\PhonebookAPI.dll
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.csprojAssemblyReference.cache
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.RazorAssemblyInfo.cache
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.RazorAssemblyInfo.cs
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.AssemblyInfoInputs.cache
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.AssemblyInfo.cs
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.RazorTargetAssemblyInfo.cache
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\bin\Debug\netcoreapp2.1\PhonebookAPI.pdb
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.dll
+C:\Code\Phonebook application\Phonebook API\PhonebookAPI\PhonebookAPI\obj\Debug\netcoreapp2.1\PhonebookAPI.pdb
