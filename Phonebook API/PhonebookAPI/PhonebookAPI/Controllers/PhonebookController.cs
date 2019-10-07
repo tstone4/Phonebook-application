@@ -35,5 +35,17 @@ namespace PhonebookAPI.Controllers
                 return results;
             }
         }
+
+        [HttpPost]
+        [Route("phonebook/add")]
+        public ActionResult AddEntry([FromBody]PhonebookEntry phonebookEntry)
+        {
+            using(var context = new SqlConnection("Server=localhost;Database=PhonebookTestDb;Trusted_Connection=True;"))
+            {
+                var sql = @"INSERT INTO [Entry] VALUES (@LastName, @FirstName, @PhoneNumber)";
+                context.Execute(sql, new { @LastName = phonebookEntry.LastName, @FirstName = phonebookEntry.FirstName, @PhoneNumber = phonebookEntry.PhoneNumber });
+            }
+            return Ok();
+        }
     }
 }
