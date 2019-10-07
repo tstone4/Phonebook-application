@@ -23,5 +23,17 @@ namespace PhonebookAPI.Controllers
                 return results;
             }
         }
+
+        [HttpGet]
+        [Route("phonebookDetail/{id}")]
+        public ActionResult<PhonebookEntry> GetUser(int id)
+        {
+            using(var context = new SqlConnection("Server=localhost;Database=PhonebookTestDb;Trusted_Connection=True;"))
+            {
+                var sql = @"SELECT Id, FirstName, LastName, PhoneNumber FROM [Entry] WHERE Id = @Id";
+                var results = context.Query<PhonebookEntry>(sql, new { @Id = id }).FirstOrDefault();
+                return results;
+            }
+        }
     }
 }
