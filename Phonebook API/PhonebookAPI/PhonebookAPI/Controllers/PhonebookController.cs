@@ -47,5 +47,17 @@ namespace PhonebookAPI.Controllers
             }
             return Ok();
         }
+
+        [HttpDelete]
+        [Route("phonebook/delete/{id}")]
+        public ActionResult RemoveEntry([FromRoute]int Id)
+        {
+            using(var context = new SqlConnection("Server=localhost;Database=PhonebookTestDb;Trusted_Connection=True;"))
+            {
+                var sql = @"DELETE FROM [Entry] WHERE id=@id";
+                context.Execute(sql, new { @id = Id });
+            }
+            return Ok();
+        }
     }
 }
