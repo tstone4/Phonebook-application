@@ -37,6 +37,18 @@ namespace PhonebookAPI.Controllers
         }
 
         [HttpPost]
+        [Route("phonebook/addEmail")]
+        public ActionResult AddEmailToEntry([FromBody]PhonebookEntry phonebookEntry, string email)
+        {
+            using(var context = new SqlConnection("Server=localhost;Database=PhonebookTestDb;Trusted_Connection=True;"))
+            {
+                var sql = @"INSERT INTO Email VALUES @entryId, @email";
+                context.Execute(sql, new { @entryId = phonebookEntry.Id, @email = email });
+            }
+            return Ok();
+        }
+
+        [HttpPost]
         [Route("phonebook/add")]
         public ActionResult AddEntry([FromBody]PhonebookEntry phonebookEntry)
         {
