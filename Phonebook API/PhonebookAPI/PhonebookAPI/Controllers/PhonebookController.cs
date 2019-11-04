@@ -36,6 +36,7 @@ namespace PhonebookAPI.Controllers
             }
         }
 
+        //not using currently
         [HttpPost]
         [Route("phonebook/addEmail")]
         public ActionResult AddEmailToEntry([FromBody]PhonebookEntry phonebookEntry, string email)
@@ -48,14 +49,16 @@ namespace PhonebookAPI.Controllers
             return Ok();
         }
 
+
+        //need to update entry table to also include email as a column
         [HttpPost]
         [Route("phonebook/add")]
         public ActionResult AddEntry([FromBody]PhonebookEntry phonebookEntry)
         {
             using(var context = new SqlConnection("Server=localhost;Database=PhonebookTestDb;Trusted_Connection=True;"))
             {
-                var sql = @"INSERT INTO [Entry] VALUES (@LastName, @FirstName, @PhoneNumber)";
-                context.Execute(sql, new { @LastName = phonebookEntry.LastName, @FirstName = phonebookEntry.FirstName, @PhoneNumber = phonebookEntry.PhoneNumber });
+                var sql = @"INSERT INTO [Entry] VALUES (@LastName, @FirstName, @PhoneNumber, @Email)";
+                context.Execute(sql, new { @LastName = phonebookEntry.LastName, @FirstName = phonebookEntry.FirstName, @PhoneNumber = phonebookEntry.PhoneNumber/*, @Email = phonebookEntry.Email*/ });
             }
             return Ok();
         }
